@@ -14,3 +14,4 @@ def censor(text):
         return ' '.join(text)
     else:
         return "Ошибка!"
+
