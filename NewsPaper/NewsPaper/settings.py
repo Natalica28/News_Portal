@@ -165,3 +165,9 @@ STATICFILES_DIRS = [
 ]
 
 SITE_URL = 'http://127.0.0.1:8000'
+
+CELERY_BROKER_URL = 'redis://default:nPEG7U0VqzgJJdxXmEuyjnInLhSSqPNl@redis-15779.c281.us-east-1-2.ec2.cloud.redislabs.com:15779'
+CELERY_RESULT_BACKEND = 'redis://default:nPEG7U0VqzgJJdxXmEuyjnInLhSSqPNl@redis-15779.c281.us-east-1-2.ec2.cloud.redislabs.com:15779'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
